@@ -767,7 +767,7 @@
             <p>Hope you have a cracking year ahead</p>
             <p>(tap below 👇to open your gift)</p>
           </div>
-        
+
           <div>
             <div class="gift">
               <div class="gift__bow">
@@ -822,8 +822,9 @@
       let el = document.getElementById('card-opener');
       el.onclick = () => document.body.classList.toggle('open');
 
+      const newUrl = new URL('snowball-toy/index.html', window.location.href);
       el = document.getElementsByClassName('gift')[0];
-      el.onclick = () => window.open('https://dylankenneally.com/christmas-2022/', 'snowball-window');
+      el.onclick = () => window.open(newUrl.href, 'snowball-window');
     </script>
   </body>
 </html>
